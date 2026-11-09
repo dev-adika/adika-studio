@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adika Studio - 30 Comédies 1000F</title>
+<style>
+body{font-family:Arial;background:#111;color:white;text-align:center;padding:15px;margin:0}
+h1{color:#ffcc00} .prix{background:#ffcc00;color:black;padding:15px;border-radius:15px;font-weight:bold}
+.card{background:#222;padding:18px;margin:14px 0;border-radius:15px;text-align:left}
+.card h2{color:#ffcc00;margin:0 0 8px 0;font-size:18px}
+button{background:#ffcc00;border:none;padding:11px;width:100%;border-radius:10px;font-weight:bold;margin-top:8px;cursor:pointer}
+.btn-wa{background:#25D366;color:white} textarea{width:95%;height:75px;border-radius:10px;padding:10px}
+.petit{font-size:13px;color:#ccc}
+</style>
+</head>
+<body>
+<h1>🎬 ADIKA STUDIO 😂</h1>
+<p>30 Comédies d'Aného - 1000F seulement !</p>
+<div class="prix">🎉 1 COMÉDIE = 1000F<br>📱 Orange Money / Moov Money / Wave<br>📞 WhatsApp : 97 52 89 50<br>📲 TikTok : @AdikaStudio</div>
+<div id="list"></div>
+<div class="card" style="text-align:center"><h2>✨ COMÉDIE PERSO AVEC TON NOM ?</h2><p>Ton business, ta blague, ton nom. 1000F</p><button class="btn-wa" onclick="commander('Comedie Perso')">🟢 Commander - 1000F</button></div>
+<p class="petit">© Adika Studio - Aného, Togo</p>
+<script>
+const comedies=[
+["1. Tonton Piment","Funny 3D cartoon, old Togolese man eating spicy sauce in Aneho, face red, speaks slowly in French: 'Aïe aïe aïe ! Qui a mis tout ce piment ? Ma bouche est en feu !' Pixar style, slow French"],
+["2. Maman du Marché","Funny 3D cartoon, Togolese woman selling tomatoes at market in Aneho, speaks slowly in French: 'Tomate là c'est 500 francs, tu veux ou tu veux pas ? Si tu discutes trop, ça devient 1000 !' Pixar style"],
+["3. Match de Foot","Funny 3D cartoon, two Togolese men watching football in bar in Aneho, one jumps, speaks slowly in French: 'BUT ! BUT ! Togo a marqué ! Je t'avais dit !' Pixar style"],
+["4. Coiffeur Fou","Funny 3D cartoon, Togolese barber shop in Aneho, young man with funny haircut looks in mirror, speaks slowly in French: 'Tonton, je t'ai dit coupe simple, pourquoi je ressemble à un poulet ?' Pixar style"],
+["5. Élève en Retard","Funny 3D cartoon, Togolese school boy late to school in Aneho, speaks slowly in French: 'Madame, pardon, c'est pas ma faute, c'est le zemidjan qui m'a perdu !' Pixar style"],
+["6. Taximan Pressé","Funny 3D cartoon, Togolese taxi driver driving fast in Aneho, passenger scared, speaks slowly in French: 'T'inquiète pas mon frère, moi je suis pilote !' Pixar style"],
+["7. Maman Akassa","Funny 3D cartoon, Togolese woman selling akassa in Aneho, speaks slowly in French: 'Mon akassa là, c'est le meilleur d'Aného ! Si tu manges ça, tu oublies ton nom !' Pixar style"],
+["8. Téléphone Tombé","Funny 3D cartoon, Togolese young man dropping phone in water in Aneho, speaks slowly in French: 'Non ! Mon téléphone est tombé ! Mes photos, ma vie est finie !' Pixar style"],
+["9. Poulet Voleur","Funny 3D cartoon, Togolese man chasing chicken in yard in Aneho, speaks slowly in French: 'Poulet là, reviens ! Je t'ai nourri pour Noël, tu ne peux pas fuir !' Pixar style"],
+["10. Pasteur et Dîme","Funny 3D cartoon, Togolese pastor in church in Aneho, speaks slowly in French: 'Mon frère, donne ta dîme ! Dieu te voit, même si tu caches l'argent dans ta chaussette !' Pixar style"],
+["11. Perruque Envolée","Funny 3D cartoon, Togolese hairdresser salon in Aneho, woman's wig flies with wind, speaks slowly in French: 'Ma perruque ! Elle coûte 15000 francs, attrapez-la !' Pixar style"],
+["12. Directeur Fâché","Funny 3D cartoon, Togolese school director in Aneho, speaks slowly in French: 'Qui a mis du piment sur ma chaise ? Je veux le coupable !' Pixar style"],
+["13. Coupure de Courant","Funny 3D cartoon, Togolese family in dark house in Aneho during power cut, father with torch, speaks slowly in French: 'Encore coupure ! CEET, vous êtes où ? On ne peut pas regarder le match !' Pixar style"],
+["14. Demande en Mariage","Funny 3D cartoon, Togolese young man kneeling to propose in Aneho, drops ring, speaks slowly in French: 'Chérie, attends, la bague est tombée ! Ne dis pas non, c'est la bague qui est timide !' Pixar style"],
+["15. Tonton au Bar","Funny 3D cartoon, old Togolese man drunk at bar in Aneho, speaks slowly in French: 'Moi je ne suis pas saoul, c'est la chaise qui bouge !' Pixar style"],
+["16. Zemidjan Fou","Funny 3D cartoon, Togolese zemidjan driver in Aneho driving fast with 3 passengers, speaks slowly in French: 'Accrochez-vous ! Moi je ne freine pas, je prie !' Pixar style"],
+["17. Grand-Mère et WhatsApp","Funny 3D cartoon, old Togolese grandma in Aneho trying to send voice message, speaks slowly in French: 'Allô ? On m'entend ? Pourquoi le téléphone ne parle pas ?' Pixar style"],
+["18. Vendeur de Chaussures","Funny 3D cartoon, Togolese shoe seller at market in Aneho, speaks slowly in French: 'Mon frère, chaussure là c'est original ! C'est venu de Paris, en passant par Lomé !' Pixar style"],
+["19. Le Pêcheur","Funny 3D cartoon, Togolese fisherman at beach in Aneho, catches only a small fish, speaks slowly in French: 'Toute la journée pour ça ? Même le poisson se moque de moi !' Pixar style"],
+["20. Le Tailleur","Funny 3D cartoon, Togolese tailor in Aneho, client tries too small shirt, speaks slowly in French: 'Tonton, tu as dit taille M, ça c'est taille bébé ! Je ne peux pas respirer !' Pixar style"],
+["21. La Belle-Mère","Funny 3D cartoon, Togolese mother-in-law visiting in Aneho, tastes food, speaks slowly in French: 'Hum ! Tu as mis du sel ou tu as oublié ? Mon fils ne mange pas comme ça chez moi !' Pixar style"],
+["22. Le Policier","Funny 3D cartoon, Togolese policeman stopping zemidjan in Aneho, speaks slowly in French: 'Papiers ! Tu n'as pas de casque, pas de papiers, mais tu as le courage de rouler ?' Pixar style"],
+["23. Le Mécanicien","Funny 3D cartoon, Togolese mechanic in Aneho under car, speaks slowly in French: 'Ton voiture là, elle est fatiguée ! Elle a besoin de repos, comme moi !' Pixar style"],
+["24. Le DJ du Quartier","Funny 3D cartoon, Togolese DJ at party in Aneho, music stops, speaks slowly in French: 'Qui a débranché mon fil ? La fête est finie ? Non, la fête commence !' Pixar style"],
+["25. Le Bébé qui Pleure","Funny 3D cartoon, Togolese father trying to calm crying baby in Aneho at night, speaks slowly in French: 'Bébé, dors ! Papa aussi veut dormir, demain papa doit travailler !' Pixar style"],
+["26. Le Voisin Bruyant","Funny 3D cartoon, Togolese man knocking on neighbour door in Aneho at night, speaks slowly in French: 'Mon voisin, ta musique est trop forte ! Mon bébé ne dort pas, moi non plus !' Pixar style"],
+["27. La Pluie d'Aného","Funny 3D cartoon, Togolese people running in heavy rain in Aneho, one man with umbrella broken, speaks slowly in French: 'La pluie d'Aného ne prévient pas ! Elle tombe comme si elle est fâchée !' Pixar style"],
+["28. Penalty Raté","Funny 3D cartoon, Togolese footballer missing penalty in Aneho stadium, crowd shocked, speaks slowly in French: 'Ce n'était pas moi, c'est le ballon qui a glissé !' Pixar style"],
+["29. Client qui ne Paie Pas","Funny 3D cartoon, Togolese shop owner chasing client in Aneho, speaks slowly in French: 'Mon frère, tu as mangé, tu as bu, maintenant tu dis demain ? Demain c'est quand ?' Pixar style"],
+["30. Tonton et Selfie","Funny 3D cartoon, old Togolese man trying to take selfie in Aneho, phone upside down, speaks slowly in French: 'Comment on fait selfie ? Pourquoi je vois seulement mon nez ?' Pixar style"]
+];
+let html="";
+comedies.forEach((c,i)=>{
+let id="p"+i;
+html+=`<div class="card"><h2>🎬 ${c[0]}</h2><textarea id="${id}">${c[1]}</textarea><button onclick="copier('${id}')">📋 Copier le texte</button><button class="btn-wa" onclick="commander('${c[0]}')">🟢 Commander cette comédie - 1000F</button></div>`;
+});
+document.getElementById("list").innerHTML=html;
+function copier(id){var t=document.getElementById(id);t.select();document.execCommand("copy");alert("Copié poto ! Va coller dans Kling !");}
+function commander(nom){var msg="Salut Adika ! Je veux commander : "+nom+" - 1000F. Comment je paie ?";window.open("https://wa.me/22897528950?text="+encodeURIComponent(msg),"_blank");}
+</script>
+</body>
+</html>
