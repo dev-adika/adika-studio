@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ADIKA STUDIO - Photographie à Aného</title>
+<title>ADIKA STUDIO - Photo, Vidéo & Comédie à Aného</title>
 <style>
 * { margin:0; padding:0; box-sizing:border-box; -webkit-user-select:none; user-select:none; font-family: Arial, sans-serif; }
 body { background:#0f0f0f; color:white; }
@@ -13,9 +13,12 @@ header h1 { font-size:42px; letter-spacing:3px; }
 header p { margin-top:10px; font-size:18px; }
 section { padding:30px 20px; max-width:800px; margin:auto; }
 h2 { color:#ff9a00; margin-bottom:15px; font-size:24px; }
-.card { background:#1e1e1e; padding:20px; border-radius:15px; margin-bottom:15px; }
-.card h3 { margin-bottom:8px; }
-.price { color:#ff2e63; font-weight:bold; font-size:20px; }
+a.card { display:block; background:#1e1e1e; padding:20px; border-radius:15px; margin-bottom:15px; text-decoration:none; color:white; border:1px solid #333; }
+a.card:active { background:#2a2a2a; transform:scale(0.98); }
+a.card h3 { margin-bottom:8px; }
+a.card p { color:#ccc; }
+.price { color:#ff2e63; font-weight:bold; font-size:20px; margin-top:8px; }
+.click { color:#25D366; font-size:13px; margin-top:8px; font-weight:bold; }
 .btn { display:block; text-align:center; background:#25D366; color:white; padding:15px; border-radius:50px; text-decoration:none; font-weight:bold; margin:10px 0; font-size:18px; }
 .btn-mail { background:#ff2e63; }
 footer { text-align:center; padding:30px 20px; color:#aaa; font-size:14px; }
@@ -31,45 +34,69 @@ document.addEventListener('keydown', e => { if(e.ctrlKey && (e.key=='c' || e.key
 
 <header>
 <h1>ADIKA STUDIO</h1>
-<p>📸 Shooting Photo & Vidéo - Aného, Togo</p>
+<p>📸 Photo - Vidéo - Comédie - Aného, Togo</p>
 <p>Le studio qui te met en valeur</p>
 </header>
 
 <section>
-<h2>📸 Nos Services</h2>
-<div class="card">
+<h2>📸 Nos Services - Clique pour réserver !</h2>
+
+<a class="card" href="https://wa.me/22897528950?text=Bonjour%20ADIKA%20STUDIO%2C%20je%20veux%20un%20Portrait%20Solo%20%C3%A0%202000F">
 <h3>Portrait Solo</h3>
 <p>Photo pro pour Insta, CV, anniversaire</p>
-<p class="price">À partir de 5.000 FCFA</p>
-</div>
-<div class="card">
+<p class="price">2.000 FCFA</p>
+<p class="click">👉 CLIQUE ICI POUR RÉSERVER</p>
+</a>
+
+<a class="card" href="https://wa.me/22897528950?text=Bonjour%20ADIKA%20STUDIO%2C%20je%20veux%20un%20Shooting%20Couple%20Famille%20%C3%A0%203500F">
 <h3>Shooting Couple / Famille</h3>
 <p>Souvenirs inoubliables avec tes proches</p>
-<p class="price">À partir de 10.000 FCFA</p>
-</div>
-<div class="card">
+<p class="price">3.500 FCFA</p>
+<p class="click">👉 CLIQUE ICI POUR RÉSERVER</p>
+</a>
+
+<a class="card" href="https://wa.me/22897528950?text=Bonjour%20ADIKA%20STUDIO%2C%20je%20veux%20un%20devis%20pour%20un%20%C3%A9v%C3%A9nement">
 <h3>Événement - Anniversaire / Mariage</h3>
 <p>On couvre ton événement de A à Z</p>
 <p class="price">Devis sur WhatsApp</p>
-</div>
-<div class="card">
+<p class="click">👉 CLIQUE ICI POUR DEMANDER</p>
+</a>
+
+<a class="card" href="https://wa.me/22897528950?text=Bonjour%20ADIKA%20STUDIO%2C%20je%20veux%20une%20Vid%C3%A9o%20TikTok">
 <h3>Vidéo TikTok / Clip</h3>
 <p>Montage pro, qualité studio</p>
-<p class="price">À partir de 10.000 FCFA</p>
-</div>
+<p class="price">À partir de 3.000 FCFA</p>
+<p class="click">👉 CLIQUE ICI POUR RÉSERVER</p>
+</a>
+</section>
+
+<section>
+<h2>😂 NOTRE COMÉDIE - ADIKA COMÉDIE</h2>
+<p style="margin-bottom:15px; color:#ccc;">Nos vidéos qui font rire tout Aného ! Rire garanti, sinon on rembourse le rire 😂</p>
+
+<a class="card" href="https://wa.me/22897528950?text=Bonjour%20ADIKA%2C%20je%20veux%20voir%20vos%20com%C3%A9dies">
+<h3>🎬 Nos Sketchs Comédie</h3>
+<p>Les meilleures blagues d'Aného, la vie de quartier, les potos, la famille... Tu vas mourir de rire !</p>
+<p class="click">👉 CLIQUE POUR VOIR NOS COMÉDIES</p>
+</a>
+
+<a class="card" href="https://www.instagram.com/rastizy2007">
+<h3>📱 Suis-nous sur Instagram</h3>
+<p>@rastizy2007 - Toutes nos comédies sont là-bas !</p>
+<p class="click">👉 CLIQUE POUR ALLER SUR INSTA</p>
+</a>
 </section>
 
 <section>
 <h2>📍 Nous Contacter</h2>
-<p style="margin-bottom:15px;">Réserve ton shooting maintenant, on te répond vite !</p>
-<a class="btn" href="https://wa.me/22800000000?text=Bonjour%20ADIKA%20STUDIO%2C%20je%20veux%20un%20shooting">💬 Réserver sur WhatsApp</a>
+<a class="btn" href="https://wa.me/22897528950?text=Bonjour%20ADIKA%20STUDIO%2C%20je%20veux%20un%20shooting">💬 Réserver sur WhatsApp - 97 52 89 50</a>
 <a class="btn btn-mail" href="mailto:rastizy2007@gmail.com?subject=Réservation%20Shooting%20ADIKA%20STUDIO">✉️ rastizy2007@gmail.com</a>
 <p style="text-align:center; margin-top:10px;">Instagram : @rastizy2007</p>
 </section>
 
 <footer>
 <p>© 2026 ADIKA STUDIO - Aného, Togo</p>
-<p>Contact : <a href="mailto:rastizy2007@gmail.com">rastizy2007@gmail.com</a></p>
+<p>Contact : <a href="mailto:rastizy2007@gmail.com">rastizy2007@gmail.com</a> - 97 52 89 50</p>
 </footer>
 
 </body>
